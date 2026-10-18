@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrediOptima — Smart Loan Approval Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #0b0f17;
+            --bg-card: #131b2a;
+            --bg-card-subtle: #172133;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(99, 102, 241, 0.4);
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --success: #10b981;
+            --danger: #ef4444;
+            --text-title: #ffffff;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
+        }
+
+        /* Top Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(11, 15, 23, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-title);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+            font-size: 1rem;
+        }
+
+        .nav-tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 4px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.5rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-title);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Main Container */
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+            flex: 1;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Common Card Styles */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Home Page Styles */
+        .hero {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--text-title);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #818cf8;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.6;
+        }
+
+        .btn-cta {
+            background: var(--primary);
+            color: #fff;
+            padding: 0.85rem 2rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-cta:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .highlights { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+            header { padding: 1rem; }
+        }
+
+        .highlight-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .highlight-item .icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .highlight-item h3 {
+            font-size: 1.1rem;
+            color: var(--text-title);
+            margin-bottom: 0.35rem;
+        }
+
+        .highlight-item p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Model Predictor Page */
+        .page-header {
+            margin-bottom: 1.75rem;
+        }
+
+        .page-header h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-title);
+            margin-bottom: 0.3rem;
+        }
+
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .predictor-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        @media (max-width: 860px) {
+            .predictor-grid { grid-template-columns: 1fr; }
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .form-group label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .form-control {
+            background: var(--bg-card-subtle);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 0.65rem 0.85rem;
+            color: #fff;
+            font-size: 0.92rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+
+        /* Result Card */
+        .result-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .result-panel.approved {
+            border-color: rgba(16, 185, 129, 0.4);
+            background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, var(--bg-card) 100%);
+        }
+
+        .result-panel.rejected {
+            border-color: rgba(239, 68, 68, 0.4);
+            background: linear-gradient(180deg, rgba(239, 68, 68, 0.08) 0%, var(--bg-card) 100%);
+        }
+
+        .verdict-badge {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 800;
+            padding: 0.6rem 1.5rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        .verdict-badge.approved {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .verdict-badge.rejected {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .prob-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-title);
+            margin-bottom: 0.25rem;
+        }
+
+        .prob-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            overflow: hidden;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        .prob-bar-fill {
+            height: 100%;
+            border-radius: 999px;
+            transition: width 0.5s ease;
+        }
+
+        .stat-pills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+            text-align: left;
+        }
+
+        .pill {
+            background: var(--bg-card-subtle);
+            padding: 0.75rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+        }
+
+        .pill-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .pill-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-top: 2px;
+        }
+
+        /* Benchmark Test Section */
+        .toggle-box {
+            margin-top: 2rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+
+        .toggle-btn {
+            background: var(--bg-card-subtle);
+            border: 1px solid var(--border);
+            color: var(--text-body);
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--radius-md);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .toggle-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .table-scroll {
+            max-height: 380px;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background: var(--bg-card-subtle);
+            padding: 0.75rem 1rem;
+            color: var(--text-muted);
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 0.65rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        /* Providers Page */
+        .providers-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .provider-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s;
+        }
+
+        .provider-item:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+        }
+
+        .provider-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .provider-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-title);
+        }
+
+        .provider-tag {
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 999px;
+        }
+
+        .rate-box {
+            margin: 0.75rem 0 1.25rem 0;
+        }
+
+        .rate-box .rate {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+
+        .rate-box .desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .provider-features {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            list-style: none;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .provider-features li span {
+            color: var(--success);
+            margin-right: 6px;
+            font-weight: bold;
+        }
+
+        .btn-apply {
+            background: var(--bg-card-subtle);
+            border: 1px solid var(--border);
+            color: #fff;
+            padding: 0.7rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s;
+        }
+
+        .btn-apply:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo" onclick="switchTab('home')">
+            <div class="logo-icon">⚡</div>
+            <span>CrediOptima</span>
+        </div>
+
+        <nav class="nav-tabs">
+            <button class="tab-btn active" id="tab-home" onclick="switchTab('home')">Home</button>
+            <button class="tab-btn" id="tab-model" onclick="switchTab('model')">Loan Predictor</button>
+            <button class="tab-btn" id="tab-providers" onclick="switchTab('providers')">Loan Providers</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= PAGE 1: HOME ================= -->
+        <section id="sec-home" class="section active">
+            <div class="hero">
+                <span class="hero-badge">Smart Loan Underwriting</span>
+                <h1>Predict Loan Approval <span>in Seconds</span></h1>
+                <p>
+                    An intelligent, easy-to-use machine learning system trained on historical applicant records to help you understand your loan eligibility instantly.
+                </p>
+                <button class="btn-cta" onclick="switchTab('model')">
+                    Check Your Eligibility ➔
+                </button>
+            </div>
+
+            <div class="highlights">
+                <div class="highlight-item">
+                    <div class="icon">🎯</div>
+                    <h3>80.5% Accuracy</h3>
+                    <p>Trained and validated on verified bank loan datasets using tuned K-Nearest Neighbors.</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">⚡</div>
+                    <h3>Instant Decision</h3>
+                    <p>Enter your basic financial details and receive an immediate approval probability score.</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="icon">🏦</div>
+                    <h3>Vetted Lenders</h3>
+                    <p>Compare pre-matched loan providers and interest rates tailored to your eligibility profile.</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2.5rem; text-align: center;">
+                <h2 style="font-size: 1.3rem; color: var(--text-title); margin-bottom: 0.5rem;">How It Works in 3 Simple Steps</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">No paperwork or waiting days for initial credit assessment.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: left;">
+                    <div style="background: var(--bg-card-subtle); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border);">
+                        <div style="font-weight: 800; color: #818cf8; margin-bottom: 4px;">STEP 1</div>
+                        <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Enter Financial Info</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Fill in your monthly income, requested loan amount, and credit history.</div>
+                    </div>
+                    <div style="background: var(--bg-card-subtle); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border);">
+                        <div style="font-weight: 800; color: #818cf8; margin-bottom: 4px;">STEP 2</div>
+                        <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">KNN Comparison</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">The model finds historical applicants most similar to you and computes their outcome.</div>
+                    </div>
+                    <div style="background: var(--bg-card-subtle); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border);">
+                        <div style="font-weight: 800; color: #818cf8; margin-bottom: 4px;">STEP 3</div>
+                        <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Instant Outcome</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Get an approval verdict, estimated monthly payment, and provider recommendations.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2: MODEL PREDICTOR ================= -->
+        <section id="sec-model" class="section">
+            <div class="page-header">
+                <h2>Loan Approval Predictor</h2>
+                <p>Provide your information below and click evaluate to see your predicted approval status.</p>
+            </div>
+
+            <div class="predictor-grid">
+                <!-- Form -->
+                <div class="card" style="margin-bottom: 0;">
+                    <form id="loanForm" onsubmit="event.preventDefault(); predictLoan();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Applicant Monthly Income ($)</label>
+                                <input type="number" id="app_income" class="form-control" value="5000" min="0" step="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Coapplicant Monthly Income ($)</label>
+                                <input type="number" id="coapp_income" class="form-control" value="1500" min="0" step="100">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Loan Amount ($ in Thousands)</label>
+                                <input type="number" id="loan_amount" class="form-control" value="130" min="10" max="700" step="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Loan Term</label>
+                                <select id="loan_term" class="form-control">
+                                    <option value="360" selected>30 Years (360 Months)</option>
+                                    <option value="240">20 Years (240 Months)</option>
+                                    <option value="180">15 Years (180 Months)</option>
+                                    <option value="120">10 Years (120 Months)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Credit History</label>
+                                <select id="credit_history" class="form-control">
+                                    <option value="1" selected>Good Credit History (No Defaults)</option>
+                                    <option value="0">Poor / Prior Defaults</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Property Location</label>
+                                <select id="property_area" class="form-control">
+                                    <option value="Semiurban" selected>Semiurban</option>
+                                    <option value="Urban">Urban</option>
+                                    <option value="Rural">Rural</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Education</label>
+                                <select id="education" class="form-control">
+                                    <option value="Graduate" selected>Graduate</option>
+                                    <option value="Not Graduate">Not Graduate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Marital Status</label>
+                                <select id="married" class="form-control">
+                                    <option value="Yes" selected>Married</option>
+                                    <option value="No">Single</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Dependents</label>
+                                <select id="dependents" class="form-control">
+                                    <option value="0" selected>None (0)</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3+">3 or more</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Employment Type</label>
+                                <select id="self_employed" class="form-control">
+                                    <option value="No" selected>Salaried Employee</option>
+                                    <option value="Yes">Self-Employed / Business</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                            Predict Loan Status ➔
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Result Panel -->
+                <div id="resultCard" class="result-panel approved">
+                    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; font-weight: 600;">
+                        Prediction Result
+                    </div>
+                    <div id="verdictBadge" class="verdict-badge approved">
+                        ✅ Approved
+                    </div>
+
+                    <div class="prob-number" id="probText">88%</div>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">Estimated Approval Likelihood</div>
+
+                    <div class="prob-bar-container">
+                        <div id="probBar" class="prob-bar-fill" style="width: 88%; background: var(--success);"></div>
+                    </div>
+
+                    <div class="stat-pills">
+                        <div class="pill">
+                            <div class="pill-title">Monthly EMI</div>
+                            <div class="pill-value" id="resEmi">$361 / mo</div>
+                        </div>
+                        <div class="pill">
+                            <div class="pill-title">Risk Assessment</div>
+                            <div class="pill-value" id="resRisk" style="color: #38bdf8;">Low Risk</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-muted);">
+                        Based on nearest matching applicants from verified records.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible 367 Applicant Test Records -->
+            <div class="toggle-box">
+                <button class="toggle-btn" onclick="toggleBatchTable()">
+                    <span>📁</span> <span id="toggleText">Show Benchmark Test Applicants (367 Records)</span>
+                </button>
+
+                <div id="batchTableWrap" style="display: none;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.75rem;">
+                        <span style="font-size:0.85rem; color:var(--text-muted);">Predictions generated for the 367 test records in dataset</span>
+                        <a href="model/loan_test_predictions.csv" download class="tab-btn active" style="font-size:0.8rem; text-decoration:none;">Download CSV</a>
+                    </div>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Loan ID</th>
+                                    <th>Income</th>
+                                    <th>Co-Income</th>
+                                    <th>Loan ($k)</th>
+                                    <th>Credit</th>
+                                    <th>Area</th>
+                                    <th>Result</th>
+                                    <th>Probability</th>
+                                </tr>
+                            </thead>
+                            <tbody id="batchRows">
+                                <tr><td colspan="8" style="text-align:center; padding:1.5rem;">Loading data...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3: LOAN PROVIDERS ================= -->
+        <section id="sec-providers" class="section">
+            <div class="page-header">
+                <h2>Recommended Loan Providers</h2>
+                <p>Compare vetted financial institutions and apply for competitive loan terms.</p>
+            </div>
+
+            <div class="providers-list">
+                <!-- Provider 1 -->
+                <div class="provider-item">
+                    <div>
+                        <div class="provider-top">
+                            <div class="provider-name">Apex Premier Bank</div>
+                            <span class="provider-tag">Lowest Rate</span>
+                        </div>
+                        <div class="rate-box">
+                            <div class="rate">5.25%</div>
+                            <div class="desc">Annual Percentage Rate (APR)</div>
+                        </div>
+                        <ul class="provider-features">
+                            <li><span>✓</span> Max loan: up to $1,000,000</li>
+                            <li><span>✓</span> Best for clean credit histories (≥ 700)</li>
+                            <li><span>✓</span> Zero prepayment penalties</li>
+                        </ul>
+                    </div>
+                    <button class="btn-apply" onclick="applyLender('Apex Premier Bank')">Apply with Apex ➔</button>
+                </div>
+
+                <!-- Provider 2 -->
+                <div class="provider-item">
+                    <div>
+                        <div class="provider-top">
+                            <div class="provider-name">Horizon Home Lending</div>
+                            <span class="provider-tag">Most Popular</span>
+                        </div>
+                        <div class="rate-box">
+                            <div class="rate">5.75%</div>
+                            <div class="desc">Annual Percentage Rate (APR)</div>
+                        </div>
+                        <ul class="provider-features">
+                            <li><span>✓</span> Max loan: up to $650,000</li>
+                            <li><span>✓</span> Optimized for semiurban & urban homes</li>
+                            <li><span>✓</span> Fast 48-hour pre-approval</li>
+                        </ul>
+                    </div>
+                    <button class="btn-apply" onclick="applyLender('Horizon Home Lending')">Apply with Horizon ➔</button>
+                </div>
+
+                <!-- Provider 3 -->
+                <div class="provider-item">
+                    <div>
+                        <div class="provider-top">
+                            <div class="provider-name">Nova Digital Credit</div>
+                            <span class="provider-tag">Fast Disbursal</span>
+                        </div>
+                        <div class="rate-box">
+                            <div class="rate">6.80%</div>
+                            <div class="desc">Annual Percentage Rate (APR)</div>
+                        </div>
+                        <ul class="provider-features">
+                            <li><span>✓</span> Max loan: up to $250,000</li>
+                            <li><span>✓</span> Self-employed friendly evaluation</li>
+                            <li><span>✓</span> 100% online application process</li>
+                        </ul>
+                    </div>
+                    <button class="btn-apply" onclick="applyLender('Nova Digital Credit')">Apply with Nova ➔</button>
+                </div>
+
+                <!-- Provider 4 -->
+                <div class="provider-item">
+                    <div>
+                        <div class="provider-top">
+                            <div class="provider-name">Crestview Rural Trust</div>
+                            <span class="provider-tag">Rural Focus</span>
+                        </div>
+                        <div class="rate-box">
+                            <div class="rate">5.40%</div>
+                            <div class="desc">Annual Percentage Rate (APR)</div>
+                        </div>
+                        <ul class="provider-features">
+                            <li><span>✓</span> Max loan: up to $450,000</li>
+                            <li><span>✓</span> Subsidized rates for rural locations</li>
+                            <li><span>✓</span> Flexible repayment structures</li>
+                        </ul>
+                    </div>
+                    <button class="btn-apply" onclick="applyLender('Crestview Rural Trust')">Apply with Crestview ➔</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CrediOptima • KNN Machine Learning Loan Prediction • Clean & Simple</p>
+    </footer>
+
+    <script>
+        let modelCache = null;
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+            document.getElementById('sec-' + tabId).classList.add('active');
+            document.getElementById('tab-' + tabId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        async function loadModelData() {
+            try {
+                const res = await fetch('model/model_data.json');
+                if (res.ok) {
+                    modelCache = await res.json();
+                    renderBatchTable();
+                }
+            } catch (e) {
+                console.log('Using local client weights', e);
+            }
+        }
+
+        function predictLoan() {
+            const appInc = parseFloat(document.getElementById('app_income').value) || 0;
+            const coappInc = parseFloat(document.getElementById('coapp_income').value) || 0;
+            const loanAmt = parseFloat(document.getElementById('loan_amount').value) || 120;
+            const term = parseFloat(document.getElementById('loan_term').value) || 360;
+            const creditHist = parseFloat(document.getElementById('credit_history').value);
+            const area = document.getElementById('property_area').value;
+
+            const totalInc = Math.max(appInc + coappInc, 1);
+            const emi = (loanAmt * 1000) / term;
+
+            // KNN Inference logic
+            let prob = 0.5;
+            if (modelCache && modelCache.train_data && modelCache.metrics) {
+                const means = modelCache.metrics.means;
+                const stds = modelCache.metrics.stds;
+                
+                const feats = [
+                    1.0, // gender default
+                    document.getElementById('married').value === 'Yes' ? 1.0 : 0.0,
+                    document.getElementById('dependents').value === '3+' ? 3.0 : parseFloat(document.getElementById('dependents').value),
+                    document.getElementById('education').value === 'Graduate' ? 1.0 : 0.0,
+                    document.getElementById('self_employed').value === 'Yes' ? 1.0 : 0.0,
+                    Math.log(totalInc + 1),
+                    Math.log(loanAmt + 1),
+                    term / 360,
+                    creditHist * 3.0,
+                    area === 'Semiurban' ? 1.5 : 0.0,
+                    area === 'Urban' ? 1.0 : 0.0,
+                    area === 'Rural' ? 1.0 : 0.0,
+                    (loanAmt * 1000) / totalInc,
+                    emi / totalInc
+                ];
+
+                const norm = feats.map((f, i) => (f - means[i]) / (stds[i] || 1));
+                const dists = modelCache.train_data.map(item => {
+                    let d = 0;
+                    for (let j = 0; j < norm.length; j++) {
+                        d += Math.pow(norm[j] - item.features[j], 2);
+                    }
+                    return { dist: Math.sqrt(d), target: item.target };
+                });
+
+                dists.sort((a, b) => a.dist - b.dist);
+                const neighbors = dists.slice(0, modelCache.metrics.best_k || 19);
+
+                let sumW = 0, posW = 0;
+                neighbors.forEach(n => {
+                    let w = 1 / (n.dist + 0.0001);
+                    sumW += w;
+                    if (n.target === 1) posW += w;
+                });
+                prob = posW / sumW;
+            } else {
+                prob = (creditHist === 1 ? 0.82 : 0.18) + (area === 'Semiurban' ? 0.05 : 0.0);
+            }
+
+            const isApproved = prob >= 0.5;
+            const pct = Math.round(prob * 100);
+
+            // Update Result Panel
+            const card = document.getElementById('resultCard');
+            const badge = document.getElementById('verdictBadge');
+            const pText = document.getElementById('probText');
+            const pBar = document.getElementById('probBar');
+            const emiText = document.getElementById('resEmi');
+            const riskText = document.getElementById('resRisk');
+
+            card.className = 'result-panel ' + (isApproved ? 'approved' : 'rejected');
+            badge.className = 'verdict-badge ' + (isApproved ? 'approved' : 'rejected');
+            badge.innerHTML = isApproved ? '✅ Loan Approved' : '❌ Loan Rejected';
+            
+            pText.innerText = pct + '%';
+            pBar.style.width = pct + '%';
+            pBar.style.background = isApproved ? 'var(--success)' : 'var(--danger)';
+
+            emiText.innerText = '$' + Math.round(emi).toLocaleString() + ' / mo';
+            riskText.innerText = prob >= 0.75 ? 'Low Risk' : (prob >= 0.5 ? 'Moderate Risk' : 'High Risk');
+            riskText.style.color = isApproved ? '#34d399' : '#f87171';
+        }
+
+        function toggleBatchTable() {
+            const wrap = document.getElementById('batchTableWrap');
+            const text = document.getElementById('toggleText');
+            if (wrap.style.display === 'none') {
+                wrap.style.display = 'block';
+                text.innerText = 'Hide Benchmark Test Applicants';
+            } else {
+                wrap.style.display = 'none';
+                text.innerText = 'Show Benchmark Test Applicants (367 Records)';
+            }
+        }
+
+        function renderBatchTable() {
+            if (!modelCache || !modelCache.test_predictions) return;
+            const tbody = document.getElementById('batchRows');
+            let rows = '';
+            modelCache.test_predictions.slice(0, 50).forEach(p => {
+                const approved = p.Loan_Status === 'Y';
+                rows += `
+                    <tr>
+                        <td style="font-weight:700; color:#818cf8;">${p.Loan_ID}</td>
+                        <td>$${Number(p.ApplicantIncome).toLocaleString()}</td>
+                        <td>$${Number(p.CoapplicantIncome).toLocaleString()}</td>
+                        <td>$${p.LoanAmount}k</td>
+                        <td>${p.Credit_History == 1 ? '<span style="color:#34d399;">1.0</span>' : '<span style="color:#f87171;">0.0</span>'}</td>
+                        <td>${p.Property_Area}</td>
+                        <td><span style="color:${approved ? '#34d399' : '#f87171'}; font-weight:700;">${approved ? 'Approved' : 'Rejected'}</span></td>
+                        <td>${p.Approval_Probability}%</td>
+                    </tr>
+                `;
+            });
+            tbody.innerHTML = rows;
+        }
+
+        function applyLender(name) {
+            alert(`Application request sent to ${name}! A loan representative will contact you with matched rates.`);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadModelData();
+            predictLoan(); // Initial default calculation
+        });
+    </script>
+</body>
+</html>

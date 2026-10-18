@@ -1,0 +1,368 @@
+Loan_ID,Loan_Status,Status_Text,Approval_Probability,Risk_Tier,ApplicantIncome,CoapplicantIncome,TotalIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area,Education,Married
+LP001015,Y,Approved,90.2,Low Risk (Prime),5720.0,0.0,5720.0,110.0,360.0,1.0,Urban,Graduate,Yes
+LP001022,Y,Approved,81.8,Low Risk (Prime),3076.0,1500.0,4576.0,126.0,360.0,1.0,Urban,Graduate,Yes
+LP001031,Y,Approved,85.1,Low Risk (Prime),5000.0,1800.0,6800.0,208.0,360.0,1.0,Urban,Graduate,Yes
+LP001035,Y,Approved,59.2,Moderate Risk,2340.0,2546.0,4886.0,100.0,360.0,1.0,Urban,Graduate,Yes
+LP001051,Y,Approved,73.5,Moderate Risk,3276.0,0.0,3276.0,78.0,360.0,1.0,Urban,Not Graduate,No
+LP001054,Y,Approved,61.1,Moderate Risk,2165.0,3422.0,5587.0,152.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001055,Y,Approved,91.7,Low Risk (Prime),2226.0,0.0,2226.0,59.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001056,N,Rejected,23.7,High Risk (Subprime),3881.0,0.0,3881.0,147.0,360.0,0.0,Rural,Not Graduate,Yes
+LP001059,Y,Approved,90.3,Low Risk (Prime),13633.0,0.0,13633.0,280.0,240.0,1.0,Urban,Graduate,Yes
+LP001067,Y,Approved,96.8,Low Risk (Prime),2400.0,2400.0,4800.0,123.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001078,Y,Approved,73.9,Moderate Risk,3091.0,0.0,3091.0,90.0,360.0,1.0,Urban,Not Graduate,No
+LP001082,Y,Approved,94.5,Low Risk (Prime),2185.0,1516.0,3701.0,162.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001083,Y,Approved,85.3,Low Risk (Prime),4166.0,0.0,4166.0,40.0,180.0,1.0,Urban,Graduate,No
+LP001094,N,Rejected,36.6,High Risk (Subprime),12173.0,0.0,12173.0,166.0,360.0,0.0,Semiurban,Graduate,Yes
+LP001096,Y,Approved,79.9,Low Risk (Prime),4666.0,0.0,4666.0,124.0,360.0,1.0,Semiurban,Graduate,No
+LP001099,Y,Approved,78.0,Low Risk (Prime),5667.0,0.0,5667.0,131.0,360.0,1.0,Urban,Graduate,No
+LP001105,Y,Approved,86.0,Low Risk (Prime),4583.0,2916.0,7499.0,200.0,360.0,1.0,Urban,Graduate,Yes
+LP001107,Y,Approved,94.4,Low Risk (Prime),3786.0,333.0,4119.0,126.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001108,Y,Approved,89.7,Low Risk (Prime),9226.0,7916.0,17142.0,300.0,360.0,1.0,Urban,Graduate,Yes
+LP001115,Y,Approved,84.9,Low Risk (Prime),1300.0,3470.0,4770.0,100.0,180.0,1.0,Semiurban,Graduate,No
+LP001121,Y,Approved,94.9,Low Risk (Prime),1888.0,1620.0,3508.0,48.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001124,Y,Approved,74.2,Moderate Risk,2083.0,0.0,2083.0,28.0,180.0,1.0,Urban,Not Graduate,No
+LP001128,Y,Approved,74.0,Moderate Risk,3909.0,0.0,3909.0,101.0,360.0,1.0,Urban,Graduate,No
+LP001135,Y,Approved,82.1,Low Risk (Prime),3765.0,0.0,3765.0,125.0,360.0,1.0,Urban,Not Graduate,No
+LP001149,Y,Approved,74.6,Moderate Risk,5400.0,4380.0,9780.0,290.0,360.0,1.0,Urban,Graduate,Yes
+LP001153,N,Rejected,39.3,High Risk (Subprime),0.0,24000.0,24000.0,148.0,360.0,0.0,Rural,Graduate,No
+LP001163,Y,Approved,75.0,Moderate Risk,4363.0,1250.0,5613.0,140.0,360.0,1.0,Urban,Graduate,Yes
+LP001169,Y,Approved,79.1,Low Risk (Prime),7500.0,3750.0,11250.0,275.0,360.0,1.0,Urban,Graduate,Yes
+LP001174,Y,Approved,100.0,Low Risk (Prime),3772.0,833.0,4605.0,57.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001176,Y,Approved,80.9,Low Risk (Prime),2942.0,2382.0,5324.0,125.0,180.0,1.0,Urban,Graduate,No
+LP001177,Y,Approved,96.5,Low Risk (Prime),2478.0,0.0,2478.0,75.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001183,Y,Approved,85.3,Low Risk (Prime),6250.0,820.0,7070.0,192.0,360.0,1.0,Urban,Graduate,Yes
+LP001185,Y,Approved,83.9,Low Risk (Prime),3268.0,1683.0,4951.0,152.0,360.0,1.0,Semiurban,Graduate,No
+LP001187,Y,Approved,82.7,Low Risk (Prime),2783.0,2708.0,5491.0,158.0,360.0,1.0,Urban,Graduate,Yes
+LP001190,Y,Approved,96.6,Low Risk (Prime),2740.0,1541.0,4281.0,101.0,360.0,1.0,Urban,Graduate,Yes
+LP001203,N,Rejected,35.7,High Risk (Subprime),3150.0,0.0,3150.0,176.0,360.0,0.0,Semiurban,Graduate,No
+LP001208,Y,Approved,100.0,Low Risk (Prime),7350.0,4029.0,11379.0,185.0,180.0,1.0,Urban,Graduate,Yes
+LP001210,Y,Approved,78.0,Low Risk (Prime),2267.0,2792.0,5059.0,90.0,360.0,1.0,Urban,Graduate,Yes
+LP001211,Y,Approved,77.4,Low Risk (Prime),5833.0,0.0,5833.0,116.0,360.0,1.0,Urban,Graduate,No
+LP001219,Y,Approved,86.7,Low Risk (Prime),3643.0,1963.0,5606.0,138.0,360.0,1.0,Urban,Graduate,No
+LP001220,Y,Approved,73.6,Moderate Risk,5629.0,818.0,6447.0,100.0,360.0,1.0,Urban,Graduate,Yes
+LP001221,Y,Approved,79.4,Low Risk (Prime),3644.0,0.0,3644.0,110.0,360.0,1.0,Urban,Graduate,No
+LP001226,Y,Approved,100.0,Low Risk (Prime),1750.0,2024.0,3774.0,90.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001230,Y,Approved,77.6,Low Risk (Prime),6500.0,2600.0,9100.0,200.0,360.0,1.0,Semiurban,Graduate,No
+LP001231,Y,Approved,84.0,Low Risk (Prime),3666.0,0.0,3666.0,84.0,360.0,1.0,Urban,Graduate,No
+LP001232,Y,Approved,83.4,Low Risk (Prime),4260.0,3900.0,8160.0,185.0,360.0,1.0,Urban,Graduate,Yes
+LP001237,Y,Approved,74.1,Moderate Risk,4163.0,1475.0,5638.0,162.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001242,Y,Approved,100.0,Low Risk (Prime),2356.0,1902.0,4258.0,108.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001268,Y,Approved,74.4,Moderate Risk,6792.0,3338.0,10130.0,187.0,360.0,1.0,Urban,Graduate,No
+LP001270,Y,Approved,77.8,Low Risk (Prime),8000.0,250.0,8250.0,187.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001284,Y,Approved,83.5,Low Risk (Prime),2419.0,1707.0,4126.0,124.0,360.0,1.0,Urban,Graduate,Yes
+LP001287,Y,Approved,89.8,Low Risk (Prime),3500.0,833.0,4333.0,120.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001291,Y,Approved,75.8,Low Risk (Prime),3500.0,3077.0,6577.0,160.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001298,Y,Approved,82.4,Low Risk (Prime),4116.0,1000.0,5116.0,30.0,180.0,1.0,Urban,Graduate,Yes
+LP001312,Y,Approved,77.0,Low Risk (Prime),5293.0,0.0,5293.0,92.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001313,N,Rejected,41.2,High Risk (Subprime),2750.0,0.0,2750.0,130.0,360.0,0.0,Urban,Graduate,No
+LP001317,Y,Approved,69.7,Moderate Risk,4402.0,0.0,4402.0,130.0,360.0,1.0,Rural,Not Graduate,No
+LP001321,Y,Approved,85.5,Low Risk (Prime),3613.0,3539.0,7152.0,134.0,180.0,1.0,Semiurban,Graduate,Yes
+LP001323,N,Rejected,20.6,High Risk (Subprime),2779.0,3664.0,6443.0,176.0,360.0,0.0,Semiurban,Graduate,Yes
+LP001324,Y,Approved,94.7,Low Risk (Prime),4720.0,0.0,4720.0,90.0,180.0,1.0,Semiurban,Graduate,Yes
+LP001332,Y,Approved,100.0,Low Risk (Prime),2415.0,1721.0,4136.0,110.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001335,Y,Approved,78.6,Low Risk (Prime),7016.0,292.0,7308.0,125.0,360.0,1.0,Urban,Graduate,Yes
+LP001338,Y,Approved,85.7,Low Risk (Prime),4968.0,0.0,4968.0,189.0,360.0,1.0,Semiurban,Graduate,No
+LP001347,N,Rejected,37.9,High Risk (Subprime),2101.0,1500.0,3601.0,108.0,360.0,0.0,Rural,Graduate,No
+LP001348,Y,Approved,91.6,Low Risk (Prime),4490.0,0.0,4490.0,125.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001351,Y,Approved,96.5,Low Risk (Prime),2917.0,3583.0,6500.0,138.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001352,N,Rejected,16.2,High Risk (Subprime),4700.0,0.0,4700.0,135.0,360.0,0.0,Semiurban,Not Graduate,Yes
+LP001358,N,Rejected,43.3,High Risk (Subprime),3445.0,0.0,3445.0,130.0,360.0,0.0,Semiurban,Graduate,Yes
+LP001359,Y,Approved,89.6,Low Risk (Prime),7666.0,0.0,7666.0,187.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001361,N,Rejected,19.5,High Risk (Subprime),2458.0,5105.0,7563.0,188.0,360.0,0.0,Rural,Graduate,Yes
+LP001366,Y,Approved,90.2,Low Risk (Prime),3250.0,0.0,3250.0,95.0,360.0,1.0,Semiurban,Graduate,No
+LP001368,Y,Approved,94.8,Low Risk (Prime),4463.0,0.0,4463.0,65.0,360.0,1.0,Semiurban,Graduate,No
+LP001375,Y,Approved,80.0,Low Risk (Prime),4083.0,1775.0,5858.0,139.0,60.0,1.0,Urban,Graduate,Yes
+LP001380,Y,Approved,90.7,Low Risk (Prime),3900.0,2094.0,5994.0,232.0,360.0,1.0,Rural,Graduate,Yes
+LP001386,Y,Approved,96.2,Low Risk (Prime),4750.0,3583.0,8333.0,144.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001400,Y,Approved,73.2,Moderate Risk,3583.0,3435.0,7018.0,155.0,360.0,1.0,Urban,Graduate,No
+LP001407,Y,Approved,77.1,Low Risk (Prime),3189.0,2367.0,5556.0,186.0,360.0,1.0,Urban,Graduate,Yes
+LP001413,Y,Approved,71.6,Moderate Risk,6356.0,0.0,6356.0,50.0,360.0,1.0,Rural,Graduate,No
+LP001415,Y,Approved,86.2,Low Risk (Prime),3413.0,4053.0,7466.0,128.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001419,Y,Approved,81.0,Low Risk (Prime),7950.0,0.0,7950.0,185.0,360.0,1.0,Urban,Graduate,Yes
+LP001420,Y,Approved,53.0,Moderate Risk,3829.0,1103.0,4932.0,163.0,360.0,0.0,Urban,Graduate,Yes
+LP001428,Y,Approved,68.5,Moderate Risk,72529.0,0.0,72529.0,360.0,360.0,1.0,Urban,Graduate,Yes
+LP001445,N,Rejected,29.3,High Risk (Subprime),4136.0,0.0,4136.0,149.0,480.0,0.0,Rural,Not Graduate,Yes
+LP001446,Y,Approved,81.7,Low Risk (Prime),8449.0,0.0,8449.0,257.0,360.0,1.0,Rural,Graduate,Yes
+LP001450,N,Rejected,30.8,High Risk (Subprime),4456.0,0.0,4456.0,131.0,180.0,0.0,Semiurban,Graduate,Yes
+LP001452,Y,Approved,86.5,Low Risk (Prime),4635.0,8000.0,12635.0,102.0,180.0,1.0,Rural,Graduate,Yes
+LP001455,Y,Approved,92.4,Low Risk (Prime),3571.0,1917.0,5488.0,135.0,360.0,1.0,Urban,Graduate,Yes
+LP001466,Y,Approved,84.4,Low Risk (Prime),3066.0,0.0,3066.0,95.0,360.0,1.0,Semiurban,Graduate,No
+LP001471,Y,Approved,95.4,Low Risk (Prime),3235.0,2015.0,5250.0,77.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001472,Y,Approved,65.6,Moderate Risk,5058.0,0.0,5058.0,200.0,360.0,1.0,Rural,Graduate,No
+LP001475,Y,Approved,87.1,Low Risk (Prime),3188.0,2286.0,5474.0,130.0,360.0,1.0,Rural,Graduate,Yes
+LP001483,Y,Approved,85.1,Low Risk (Prime),13518.0,0.0,13518.0,390.0,360.0,1.0,Rural,Graduate,Yes
+LP001486,Y,Approved,87.0,Low Risk (Prime),4364.0,2500.0,6864.0,185.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001490,Y,Approved,90.9,Low Risk (Prime),4766.0,1646.0,6412.0,100.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001496,N,Rejected,21.0,High Risk (Subprime),4609.0,2333.0,6942.0,123.0,360.0,0.0,Semiurban,Graduate,Yes
+LP001499,Y,Approved,90.2,Low Risk (Prime),6260.0,0.0,6260.0,110.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001500,Y,Approved,79.6,Low Risk (Prime),3333.0,4200.0,7533.0,256.0,360.0,1.0,Urban,Graduate,Yes
+LP001501,Y,Approved,94.8,Low Risk (Prime),3500.0,3250.0,6750.0,140.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001517,Y,Approved,82.9,Low Risk (Prime),9719.0,0.0,9719.0,61.0,360.0,1.0,Urban,Graduate,Yes
+LP001527,Y,Approved,86.1,Low Risk (Prime),6835.0,0.0,6835.0,188.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001534,Y,Approved,90.8,Low Risk (Prime),4452.0,0.0,4452.0,131.0,360.0,1.0,Rural,Graduate,No
+LP001542,N,Rejected,35.9,High Risk (Subprime),2262.0,0.0,2262.0,128.0,480.0,0.0,Semiurban,Graduate,Yes
+LP001547,Y,Approved,84.3,Low Risk (Prime),3901.0,0.0,3901.0,116.0,360.0,1.0,Urban,Graduate,Yes
+LP001548,Y,Approved,68.6,Moderate Risk,2687.0,0.0,2687.0,50.0,180.0,1.0,Rural,Not Graduate,Yes
+LP001558,Y,Approved,88.5,Low Risk (Prime),2243.0,2233.0,4476.0,107.0,360.0,1.0,Semiurban,Graduate,No
+LP001561,Y,Approved,95.9,Low Risk (Prime),3417.0,1287.0,4704.0,200.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001563,N,Rejected,26.7,High Risk (Subprime),1596.0,1760.0,3356.0,119.0,360.0,0.0,Urban,Graduate,No
+LP001567,Y,Approved,86.6,Low Risk (Prime),4513.0,0.0,4513.0,120.0,360.0,1.0,Rural,Graduate,Yes
+LP001568,Y,Approved,97.8,Low Risk (Prime),4500.0,0.0,4500.0,140.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001573,Y,Approved,67.1,Moderate Risk,4523.0,1350.0,5873.0,165.0,360.0,1.0,Urban,Not Graduate,Yes
+LP001584,Y,Approved,69.5,Moderate Risk,4742.0,0.0,4742.0,108.0,360.0,1.0,Semiurban,Graduate,No
+LP001587,Y,Approved,100.0,Low Risk (Prime),4082.0,0.0,4082.0,93.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001589,Y,Approved,72.4,Moderate Risk,3417.0,0.0,3417.0,102.0,360.0,1.0,Urban,Graduate,No
+LP001591,Y,Approved,92.5,Low Risk (Prime),2922.0,3396.0,6318.0,122.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001599,Y,Approved,77.2,Low Risk (Prime),4167.0,4754.0,8921.0,160.0,360.0,1.0,Rural,Graduate,Yes
+LP001601,Y,Approved,82.7,Low Risk (Prime),4243.0,4123.0,8366.0,157.0,360.0,1.0,Semiurban,Graduate,No
+LP001607,N,Rejected,36.0,High Risk (Subprime),0.0,1760.0,1760.0,180.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001611,N,Rejected,20.8,High Risk (Subprime),1516.0,2900.0,4416.0,80.0,360.0,0.0,Rural,Graduate,Yes
+LP001613,N,Rejected,17.1,High Risk (Subprime),1762.0,2666.0,4428.0,104.0,360.0,0.0,Urban,Graduate,No
+LP001622,N,Rejected,23.7,High Risk (Subprime),724.0,3510.0,4234.0,213.0,360.0,0.0,Rural,Graduate,Yes
+LP001627,Y,Approved,73.8,Moderate Risk,3125.0,0.0,3125.0,65.0,360.0,1.0,Urban,Graduate,No
+LP001650,Y,Approved,81.8,Low Risk (Prime),2333.0,3803.0,6136.0,146.0,360.0,1.0,Rural,Graduate,Yes
+LP001651,Y,Approved,75.8,Low Risk (Prime),3350.0,1560.0,4910.0,135.0,360.0,1.0,Urban,Graduate,Yes
+LP001652,N,Rejected,30.0,High Risk (Subprime),2500.0,6414.0,8914.0,187.0,360.0,0.0,Rural,Graduate,No
+LP001655,N,Rejected,31.6,High Risk (Subprime),12500.0,0.0,12500.0,300.0,360.0,0.0,Urban,Graduate,No
+LP001660,Y,Approved,88.2,Low Risk (Prime),4667.0,0.0,4667.0,120.0,360.0,1.0,Semiurban,Graduate,No
+LP001662,N,Rejected,35.6,High Risk (Subprime),6500.0,0.0,6500.0,71.0,360.0,0.0,Urban,Graduate,No
+LP001663,Y,Approved,85.0,Low Risk (Prime),7500.0,0.0,7500.0,225.0,360.0,1.0,Urban,Graduate,Yes
+LP001667,Y,Approved,80.1,Low Risk (Prime),3073.0,0.0,3073.0,70.0,180.0,1.0,Urban,Graduate,No
+LP001695,Y,Approved,96.1,Low Risk (Prime),3321.0,2088.0,5409.0,70.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP001703,Y,Approved,94.3,Low Risk (Prime),3333.0,1270.0,4603.0,124.0,360.0,1.0,Urban,Graduate,Yes
+LP001718,Y,Approved,82.1,Low Risk (Prime),3391.0,0.0,3391.0,132.0,360.0,1.0,Rural,Graduate,No
+LP001728,Y,Approved,76.8,Low Risk (Prime),3343.0,1517.0,4860.0,105.0,360.0,1.0,Rural,Graduate,Yes
+LP001735,Y,Approved,82.2,Low Risk (Prime),3620.0,0.0,3620.0,90.0,360.0,1.0,Urban,Graduate,No
+LP001737,Y,Approved,72.6,Moderate Risk,4000.0,0.0,4000.0,83.0,84.0,1.0,Urban,Graduate,No
+LP001739,Y,Approved,95.7,Low Risk (Prime),4258.0,0.0,4258.0,125.0,360.0,1.0,Urban,Graduate,Yes
+LP001742,Y,Approved,89.4,Low Risk (Prime),4500.0,0.0,4500.0,147.0,360.0,1.0,Rural,Graduate,Yes
+LP001757,Y,Approved,86.4,Low Risk (Prime),2014.0,2925.0,4939.0,120.0,360.0,1.0,Rural,Graduate,Yes
+LP001769,Y,Approved,81.8,Low Risk (Prime),3333.0,1250.0,4583.0,110.0,360.0,1.0,Semiurban,Graduate,No
+LP001771,Y,Approved,89.0,Low Risk (Prime),4083.0,0.0,4083.0,103.0,360.0,1.0,Semiurban,Graduate,No
+LP001785,N,Rejected,34.0,High Risk (Subprime),4727.0,0.0,4727.0,150.0,360.0,0.0,Rural,Graduate,No
+LP001787,Y,Approved,85.5,Low Risk (Prime),3089.0,2999.0,6088.0,100.0,240.0,1.0,Rural,Graduate,Yes
+LP001789,N,Rejected,47.0,High Risk (Subprime),6794.0,528.0,7322.0,139.0,360.0,0.0,Urban,Not Graduate,Yes
+LP001791,Y,Approved,78.7,Low Risk (Prime),32000.0,0.0,32000.0,550.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001794,Y,Approved,61.6,Moderate Risk,10890.0,0.0,10890.0,260.0,12.0,1.0,Rural,Graduate,Yes
+LP001797,Y,Approved,79.1,Low Risk (Prime),12941.0,0.0,12941.0,150.0,300.0,1.0,Urban,Graduate,No
+LP001815,Y,Approved,100.0,Low Risk (Prime),3276.0,0.0,3276.0,90.0,360.0,1.0,Semiurban,Not Graduate,No
+LP001817,N,Rejected,21.3,High Risk (Subprime),8703.0,0.0,8703.0,199.0,360.0,0.0,Rural,Not Graduate,No
+LP001818,Y,Approved,85.7,Low Risk (Prime),4742.0,717.0,5459.0,139.0,360.0,1.0,Semiurban,Graduate,Yes
+LP001822,Y,Approved,85.2,Low Risk (Prime),5900.0,0.0,5900.0,150.0,360.0,1.0,Urban,Graduate,No
+LP001827,Y,Approved,74.0,Moderate Risk,3071.0,4309.0,7380.0,180.0,360.0,1.0,Urban,Graduate,No
+LP001831,Y,Approved,95.0,Low Risk (Prime),2783.0,1456.0,4239.0,113.0,360.0,1.0,Urban,Graduate,Yes
+LP001842,Y,Approved,87.5,Low Risk (Prime),5000.0,0.0,5000.0,148.0,360.0,1.0,Rural,Graduate,No
+LP001853,N,Rejected,34.0,High Risk (Subprime),2463.0,2360.0,4823.0,117.0,360.0,0.0,Urban,Not Graduate,Yes
+LP001855,Y,Approved,88.7,Low Risk (Prime),4855.0,0.0,4855.0,72.0,360.0,1.0,Rural,Graduate,Yes
+LP001857,Y,Approved,78.2,Low Risk (Prime),1599.0,2474.0,4073.0,125.0,300.0,1.0,Semiurban,Not Graduate,No
+LP001862,Y,Approved,85.9,Low Risk (Prime),4246.0,4246.0,8492.0,214.0,360.0,1.0,Urban,Graduate,Yes
+LP001867,Y,Approved,81.8,Low Risk (Prime),4333.0,2291.0,6624.0,133.0,350.0,1.0,Rural,Graduate,Yes
+LP001878,Y,Approved,67.9,Moderate Risk,5823.0,2529.0,8352.0,187.0,360.0,1.0,Semiurban,Graduate,No
+LP001881,Y,Approved,67.5,Moderate Risk,7895.0,0.0,7895.0,143.0,360.0,1.0,Rural,Not Graduate,Yes
+LP001886,Y,Approved,81.5,Low Risk (Prime),4150.0,4256.0,8406.0,209.0,360.0,1.0,Rural,Graduate,No
+LP001906,N,Rejected,25.3,High Risk (Subprime),2964.0,0.0,2964.0,84.0,360.0,0.0,Semiurban,Graduate,No
+LP001909,Y,Approved,81.0,Low Risk (Prime),5583.0,0.0,5583.0,116.0,360.0,1.0,Urban,Graduate,No
+LP001911,Y,Approved,78.3,Low Risk (Prime),2708.0,0.0,2708.0,65.0,360.0,1.0,Rural,Graduate,No
+LP001921,Y,Approved,83.4,Low Risk (Prime),3180.0,2370.0,5550.0,80.0,240.0,1.0,Rural,Graduate,No
+LP001923,N,Rejected,24.8,High Risk (Subprime),2268.0,0.0,2268.0,170.0,360.0,0.0,Semiurban,Not Graduate,No
+LP001933,N,Rejected,35.3,High Risk (Subprime),1141.0,2017.0,3158.0,120.0,360.0,0.0,Urban,Not Graduate,No
+LP001943,Y,Approved,92.3,Low Risk (Prime),3042.0,3167.0,6209.0,135.0,360.0,1.0,Urban,Graduate,Yes
+LP001950,N,Rejected,27.2,High Risk (Subprime),1750.0,2935.0,4685.0,94.0,360.0,0.0,Semiurban,Graduate,Yes
+LP001959,Y,Approved,66.0,Moderate Risk,3564.0,0.0,3564.0,79.0,360.0,1.0,Rural,Graduate,Yes
+LP001961,Y,Approved,74.0,Moderate Risk,3958.0,0.0,3958.0,110.0,360.0,1.0,Rural,Graduate,No
+LP001973,Y,Approved,82.0,Low Risk (Prime),4483.0,0.0,4483.0,130.0,360.0,1.0,Rural,Not Graduate,Yes
+LP001975,Y,Approved,88.2,Low Risk (Prime),5225.0,0.0,5225.0,143.0,360.0,1.0,Rural,Graduate,Yes
+LP001979,Y,Approved,51.5,Moderate Risk,3017.0,2845.0,5862.0,159.0,180.0,0.0,Urban,Graduate,No
+LP001995,N,Rejected,30.5,High Risk (Subprime),2431.0,1820.0,4251.0,110.0,360.0,0.0,Rural,Not Graduate,Yes
+LP001999,Y,Approved,85.0,Low Risk (Prime),4912.0,4614.0,9526.0,160.0,360.0,1.0,Rural,Graduate,Yes
+LP002007,Y,Approved,95.3,Low Risk (Prime),2500.0,3333.0,5833.0,131.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002009,Y,Approved,75.7,Low Risk (Prime),2918.0,0.0,2918.0,65.0,360.0,1.0,Rural,Graduate,No
+LP002016,Y,Approved,86.7,Low Risk (Prime),5128.0,0.0,5128.0,143.0,360.0,1.0,Rural,Graduate,Yes
+LP002017,Y,Approved,87.4,Low Risk (Prime),15312.0,0.0,15312.0,187.0,360.0,1.0,Urban,Graduate,Yes
+LP002018,Y,Approved,88.5,Low Risk (Prime),3958.0,2632.0,6590.0,160.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002027,Y,Approved,89.3,Low Risk (Prime),4334.0,2945.0,7279.0,165.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002028,Y,Approved,89.5,Low Risk (Prime),4358.0,0.0,4358.0,110.0,360.0,1.0,Urban,Graduate,Yes
+LP002042,Y,Approved,55.5,Moderate Risk,4000.0,3917.0,7917.0,173.0,360.0,1.0,Rural,Graduate,Yes
+LP002045,Y,Approved,89.8,Low Risk (Prime),10166.0,750.0,10916.0,150.0,360.0,1.0,Urban,Graduate,Yes
+LP002046,Y,Approved,100.0,Low Risk (Prime),4483.0,0.0,4483.0,135.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002047,Y,Approved,86.4,Low Risk (Prime),4521.0,1184.0,5705.0,150.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002056,Y,Approved,88.3,Low Risk (Prime),9167.0,0.0,9167.0,235.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002057,Y,Approved,59.2,Moderate Risk,13083.0,0.0,13083.0,128.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002059,Y,Approved,80.7,Low Risk (Prime),7874.0,3967.0,11841.0,336.0,360.0,1.0,Rural,Graduate,Yes
+LP002062,Y,Approved,73.5,Moderate Risk,4333.0,0.0,4333.0,132.0,84.0,1.0,Rural,Graduate,Yes
+LP002064,Y,Approved,75.4,Low Risk (Prime),4083.0,0.0,4083.0,96.0,360.0,1.0,Urban,Graduate,No
+LP002069,N,Rejected,32.5,High Risk (Subprime),3785.0,2912.0,6697.0,180.0,360.0,0.0,Rural,Not Graduate,Yes
+LP002070,N,Rejected,29.2,High Risk (Subprime),2654.0,1998.0,4652.0,128.0,360.0,0.0,Rural,Not Graduate,Yes
+LP002077,Y,Approved,84.1,Low Risk (Prime),10000.0,2690.0,12690.0,412.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002083,Y,Approved,77.4,Low Risk (Prime),5833.0,0.0,5833.0,116.0,360.0,1.0,Urban,Graduate,No
+LP002090,N,Rejected,18.5,High Risk (Subprime),4796.0,0.0,4796.0,114.0,360.0,0.0,Semiurban,Graduate,Yes
+LP002096,Y,Approved,84.7,Low Risk (Prime),2000.0,1600.0,3600.0,115.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002099,N,Rejected,45.0,High Risk (Subprime),2540.0,700.0,3240.0,104.0,360.0,0.0,Urban,Graduate,Yes
+LP002102,Y,Approved,84.9,Low Risk (Prime),1900.0,1442.0,3342.0,88.0,360.0,1.0,Rural,Graduate,Yes
+LP002105,Y,Approved,83.2,Low Risk (Prime),8706.0,0.0,8706.0,108.0,480.0,1.0,Rural,Graduate,Yes
+LP002107,Y,Approved,82.7,Low Risk (Prime),2855.0,542.0,3397.0,90.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002111,Y,Approved,93.7,Low Risk (Prime),3016.0,1300.0,4316.0,100.0,360.0,1.0,Urban,Graduate,Yes
+LP002117,Y,Approved,94.1,Low Risk (Prime),3159.0,2374.0,5533.0,108.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002118,Y,Approved,88.7,Low Risk (Prime),1937.0,1152.0,3089.0,78.0,360.0,1.0,Semiurban,Graduate,No
+LP002123,Y,Approved,100.0,Low Risk (Prime),2613.0,2417.0,5030.0,123.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002125,Y,Approved,81.3,Low Risk (Prime),4960.0,2600.0,7560.0,187.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002148,Y,Approved,93.5,Low Risk (Prime),3074.0,1083.0,4157.0,146.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002152,Y,Approved,89.3,Low Risk (Prime),4213.0,0.0,4213.0,80.0,360.0,1.0,Urban,Graduate,No
+LP002165,Y,Approved,61.3,Moderate Risk,2038.0,4027.0,6065.0,100.0,360.0,1.0,Rural,Not Graduate,No
+LP002167,Y,Approved,85.3,Low Risk (Prime),2362.0,0.0,2362.0,55.0,360.0,1.0,Urban,Graduate,No
+LP002168,N,Rejected,31.9,High Risk (Subprime),5333.0,2400.0,7733.0,200.0,360.0,0.0,Rural,Graduate,No
+LP002172,Y,Approved,91.3,Low Risk (Prime),5384.0,0.0,5384.0,150.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002176,Y,Approved,85.9,Low Risk (Prime),5708.0,0.0,5708.0,150.0,360.0,1.0,Rural,Graduate,No
+LP002183,Y,Approved,62.1,Moderate Risk,3754.0,3719.0,7473.0,118.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002184,Y,Approved,79.1,Low Risk (Prime),2914.0,2130.0,5044.0,150.0,300.0,1.0,Urban,Not Graduate,Yes
+LP002186,Y,Approved,63.2,Moderate Risk,2747.0,2458.0,5205.0,118.0,36.0,1.0,Semiurban,Not Graduate,Yes
+LP002192,Y,Approved,74.8,Moderate Risk,7830.0,2183.0,10013.0,212.0,360.0,1.0,Rural,Graduate,Yes
+LP002195,Y,Approved,85.5,Low Risk (Prime),3507.0,3148.0,6655.0,212.0,360.0,1.0,Rural,Graduate,Yes
+LP002208,Y,Approved,74.6,Moderate Risk,3747.0,2139.0,5886.0,125.0,360.0,1.0,Urban,Graduate,Yes
+LP002212,Y,Approved,96.8,Low Risk (Prime),2166.0,2166.0,4332.0,108.0,360.0,1.0,Urban,Graduate,Yes
+LP002240,Y,Approved,79.4,Low Risk (Prime),3500.0,2168.0,5668.0,149.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002245,Y,Approved,95.3,Low Risk (Prime),2896.0,0.0,2896.0,80.0,480.0,1.0,Urban,Not Graduate,Yes
+LP002253,Y,Approved,80.3,Low Risk (Prime),5062.0,0.0,5062.0,152.0,300.0,1.0,Rural,Graduate,No
+LP002256,N,Rejected,40.1,High Risk (Subprime),5184.0,0.0,5184.0,187.0,360.0,0.0,Semiurban,Graduate,No
+LP002257,Y,Approved,81.0,Low Risk (Prime),2545.0,0.0,2545.0,74.0,360.0,1.0,Urban,Graduate,No
+LP002264,Y,Approved,96.6,Low Risk (Prime),2553.0,1768.0,4321.0,102.0,360.0,1.0,Urban,Graduate,Yes
+LP002270,Y,Approved,78.4,Low Risk (Prime),3436.0,3809.0,7245.0,100.0,360.0,1.0,Rural,Graduate,Yes
+LP002279,Y,Approved,87.7,Low Risk (Prime),2412.0,2755.0,5167.0,130.0,360.0,1.0,Rural,Graduate,No
+LP002286,N,Rejected,43.1,High Risk (Subprime),5180.0,0.0,5180.0,125.0,360.0,0.0,Urban,Not Graduate,Yes
+LP002294,Y,Approved,65.6,Moderate Risk,14911.0,14507.0,29418.0,130.0,360.0,1.0,Semiurban,Graduate,No
+LP002298,Y,Approved,75.9,Low Risk (Prime),2860.0,2988.0,5848.0,138.0,360.0,1.0,Urban,Graduate,No
+LP002306,Y,Approved,77.8,Low Risk (Prime),1173.0,1594.0,2767.0,28.0,180.0,1.0,Rural,Graduate,Yes
+LP002310,Y,Approved,80.4,Low Risk (Prime),7600.0,0.0,7600.0,92.0,360.0,1.0,Semiurban,Graduate,No
+LP002311,Y,Approved,87.1,Low Risk (Prime),2157.0,1788.0,3945.0,104.0,360.0,1.0,Urban,Graduate,Yes
+LP002316,Y,Approved,51.4,Moderate Risk,2231.0,2774.0,5005.0,176.0,360.0,0.0,Urban,Graduate,No
+LP002321,N,Rejected,33.8,High Risk (Subprime),2274.0,5211.0,7485.0,117.0,360.0,0.0,Semiurban,Graduate,No
+LP002325,Y,Approved,76.0,Low Risk (Prime),6166.0,13983.0,20149.0,102.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002326,Y,Approved,94.5,Low Risk (Prime),2513.0,1110.0,3623.0,107.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002329,Y,Approved,68.8,Moderate Risk,4333.0,0.0,4333.0,66.0,480.0,1.0,Urban,Graduate,No
+LP002333,Y,Approved,79.8,Low Risk (Prime),3844.0,0.0,3844.0,105.0,360.0,1.0,Urban,Not Graduate,No
+LP002339,N,Rejected,45.7,High Risk (Subprime),3887.0,1517.0,5404.0,105.0,360.0,0.0,Semiurban,Graduate,Yes
+LP002344,Y,Approved,100.0,Low Risk (Prime),3510.0,828.0,4338.0,105.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002346,N,Rejected,22.7,High Risk (Subprime),2539.0,1704.0,4243.0,125.0,360.0,0.0,Rural,Graduate,Yes
+LP002354,Y,Approved,97.0,Low Risk (Prime),2107.0,0.0,2107.0,64.0,360.0,1.0,Semiurban,Not Graduate,No
+LP002355,N,Rejected,45.6,High Risk (Subprime),3186.0,3145.0,6331.0,150.0,180.0,0.0,Semiurban,Graduate,Yes
+LP002358,Y,Approved,82.9,Low Risk (Prime),5000.0,2166.0,7166.0,150.0,360.0,1.0,Urban,Graduate,Yes
+LP002360,Y,Approved,90.4,Low Risk (Prime),10000.0,0.0,10000.0,128.0,360.0,1.0,Urban,Graduate,Yes
+LP002375,Y,Approved,72.4,Moderate Risk,3943.0,0.0,3943.0,64.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002376,Y,Approved,73.5,Moderate Risk,2925.0,0.0,2925.0,40.0,180.0,1.0,Rural,Graduate,No
+LP002383,Y,Approved,52.1,Moderate Risk,3242.0,437.0,3679.0,142.0,480.0,0.0,Urban,Graduate,Yes
+LP002385,Y,Approved,100.0,Low Risk (Prime),3863.0,0.0,3863.0,70.0,300.0,1.0,Semiurban,Graduate,Yes
+LP002389,Y,Approved,90.6,Low Risk (Prime),4028.0,0.0,4028.0,131.0,360.0,1.0,Semiurban,Graduate,No
+LP002394,Y,Approved,75.5,Low Risk (Prime),4010.0,1025.0,5035.0,120.0,360.0,1.0,Urban,Graduate,Yes
+LP002397,Y,Approved,76.8,Low Risk (Prime),3719.0,1585.0,5304.0,114.0,360.0,1.0,Urban,Graduate,Yes
+LP002399,N,Rejected,22.7,High Risk (Subprime),2858.0,0.0,2858.0,123.0,360.0,0.0,Rural,Graduate,No
+LP002400,Y,Approved,63.4,Moderate Risk,3833.0,0.0,3833.0,92.0,360.0,1.0,Rural,Graduate,Yes
+LP002402,Y,Approved,82.3,Low Risk (Prime),3333.0,4288.0,7621.0,160.0,360.0,1.0,Urban,Graduate,Yes
+LP002412,Y,Approved,79.8,Low Risk (Prime),3007.0,3725.0,6732.0,151.0,360.0,1.0,Rural,Graduate,Yes
+LP002415,Y,Approved,66.8,Moderate Risk,1850.0,4583.0,6433.0,81.0,360.0,1.0,Rural,Graduate,No
+LP002417,Y,Approved,78.8,Low Risk (Prime),2792.0,2619.0,5411.0,171.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002420,Y,Approved,100.0,Low Risk (Prime),2982.0,1550.0,4532.0,110.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002425,Y,Approved,81.1,Low Risk (Prime),3417.0,738.0,4155.0,100.0,360.0,1.0,Rural,Graduate,No
+LP002433,Y,Approved,62.9,Moderate Risk,18840.0,0.0,18840.0,234.0,360.0,1.0,Rural,Graduate,Yes
+LP002440,Y,Approved,78.9,Low Risk (Prime),2995.0,1120.0,4115.0,184.0,360.0,1.0,Rural,Graduate,Yes
+LP002441,Y,Approved,64.0,Moderate Risk,3579.0,3308.0,6887.0,138.0,360.0,1.0,Semiurban,Graduate,No
+LP002442,N,Rejected,9.1,High Risk (Subprime),3835.0,1400.0,5235.0,112.0,480.0,0.0,Urban,Not Graduate,Yes
+LP002445,Y,Approved,62.0,Moderate Risk,3854.0,3575.0,7429.0,117.0,360.0,1.0,Rural,Not Graduate,No
+LP002450,N,Rejected,24.8,High Risk (Subprime),5833.0,750.0,6583.0,49.0,360.0,0.0,Rural,Graduate,Yes
+LP002471,Y,Approved,90.6,Low Risk (Prime),3508.0,0.0,3508.0,99.0,360.0,1.0,Rural,Graduate,No
+LP002476,Y,Approved,90.4,Low Risk (Prime),1635.0,2444.0,4079.0,99.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002482,Y,Approved,59.1,Moderate Risk,3333.0,3916.0,7249.0,212.0,360.0,1.0,Rural,Graduate,No
+LP002485,Y,Approved,65.0,Moderate Risk,24797.0,0.0,24797.0,240.0,360.0,1.0,Semiurban,Graduate,No
+LP002495,N,Rejected,26.6,High Risk (Subprime),5667.0,440.0,6107.0,130.0,360.0,0.0,Semiurban,Graduate,Yes
+LP002496,N,Rejected,25.1,High Risk (Subprime),3500.0,0.0,3500.0,94.0,360.0,0.0,Semiurban,Graduate,No
+LP002523,Y,Approved,94.1,Low Risk (Prime),2773.0,1497.0,4270.0,108.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002542,Y,Approved,86.9,Low Risk (Prime),6500.0,0.0,6500.0,144.0,360.0,1.0,Urban,Graduate,Yes
+LP002550,Y,Approved,84.9,Low Risk (Prime),5769.0,0.0,5769.0,110.0,180.0,1.0,Semiurban,Graduate,No
+LP002551,N,Rejected,34.9,High Risk (Subprime),3634.0,910.0,4544.0,176.0,360.0,0.0,Semiurban,Not Graduate,Yes
+LP002553,Y,Approved,68.3,Moderate Risk,29167.0,0.0,29167.0,185.0,360.0,1.0,Semiurban,Graduate,No
+LP002554,Y,Approved,91.6,Low Risk (Prime),2166.0,2057.0,4223.0,122.0,360.0,1.0,Semiurban,Graduate,No
+LP002561,Y,Approved,83.4,Low Risk (Prime),5000.0,0.0,5000.0,126.0,360.0,1.0,Rural,Graduate,Yes
+LP002566,Y,Approved,89.9,Low Risk (Prime),5530.0,0.0,5530.0,135.0,360.0,1.0,Urban,Graduate,No
+LP002568,Y,Approved,60.6,Moderate Risk,9000.0,0.0,9000.0,122.0,360.0,1.0,Rural,Not Graduate,No
+LP002570,Y,Approved,89.1,Low Risk (Prime),10000.0,11666.0,21666.0,460.0,360.0,1.0,Urban,Graduate,Yes
+LP002572,Y,Approved,78.5,Low Risk (Prime),8750.0,0.0,8750.0,297.0,360.0,1.0,Urban,Graduate,Yes
+LP002581,Y,Approved,70.5,Moderate Risk,2157.0,2730.0,4887.0,140.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002584,Y,Approved,89.0,Low Risk (Prime),1972.0,4347.0,6319.0,106.0,360.0,1.0,Rural,Graduate,No
+LP002592,Y,Approved,84.0,Low Risk (Prime),4983.0,0.0,4983.0,141.0,360.0,1.0,Urban,Graduate,No
+LP002593,Y,Approved,87.2,Low Risk (Prime),8333.0,4000.0,12333.0,128.0,360.0,1.0,Urban,Graduate,Yes
+LP002599,Y,Approved,98.2,Low Risk (Prime),3667.0,2000.0,5667.0,170.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002604,Y,Approved,76.9,Low Risk (Prime),3166.0,2833.0,5999.0,145.0,360.0,1.0,Urban,Graduate,Yes
+LP002605,Y,Approved,69.8,Moderate Risk,3271.0,0.0,3271.0,90.0,360.0,1.0,Rural,Not Graduate,No
+LP002609,N,Rejected,19.8,High Risk (Subprime),2241.0,2000.0,4241.0,88.0,360.0,0.0,Urban,Graduate,Yes
+LP002610,Y,Approved,90.8,Low Risk (Prime),1792.0,2565.0,4357.0,128.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002612,Y,Approved,95.3,Low Risk (Prime),2666.0,0.0,2666.0,84.0,480.0,1.0,Semiurban,Graduate,Yes
+LP002614,Y,Approved,82.8,Low Risk (Prime),6478.0,0.0,6478.0,108.0,360.0,1.0,Semiurban,Graduate,No
+LP002630,Y,Approved,61.0,Moderate Risk,3808.0,0.0,3808.0,83.0,360.0,1.0,Rural,Not Graduate,No
+LP002635,Y,Approved,95.8,Low Risk (Prime),3729.0,0.0,3729.0,117.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002639,Y,Approved,86.8,Low Risk (Prime),4120.0,0.0,4120.0,128.0,360.0,1.0,Rural,Graduate,Yes
+LP002644,Y,Approved,74.4,Moderate Risk,7500.0,0.0,7500.0,75.0,360.0,1.0,Urban,Graduate,Yes
+LP002651,N,Rejected,24.0,High Risk (Subprime),6300.0,0.0,6300.0,125.0,360.0,0.0,Urban,Graduate,Yes
+LP002654,Y,Approved,71.0,Moderate Risk,14987.0,0.0,14987.0,177.0,360.0,1.0,Rural,Graduate,No
+LP002657,Y,Approved,64.7,Moderate Risk,570.0,2125.0,2695.0,68.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002711,Y,Approved,100.0,Low Risk (Prime),2600.0,700.0,3300.0,96.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002712,Y,Approved,83.7,Low Risk (Prime),2733.0,1083.0,3816.0,180.0,360.0,1.0,Semiurban,Not Graduate,No
+LP002721,Y,Approved,86.3,Low Risk (Prime),7500.0,0.0,7500.0,183.0,360.0,1.0,Rural,Graduate,Yes
+LP002735,Y,Approved,81.1,Low Risk (Prime),3859.0,0.0,3859.0,121.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002744,Y,Approved,78.3,Low Risk (Prime),6825.0,0.0,6825.0,162.0,360.0,1.0,Rural,Graduate,Yes
+LP002745,Y,Approved,92.0,Low Risk (Prime),3708.0,4700.0,8408.0,132.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002746,Y,Approved,84.6,Low Risk (Prime),5314.0,0.0,5314.0,147.0,360.0,1.0,Urban,Graduate,No
+LP002747,N,Rejected,35.1,High Risk (Subprime),2366.0,5272.0,7638.0,153.0,360.0,0.0,Rural,Graduate,No
+LP002754,Y,Approved,76.8,Low Risk (Prime),2066.0,2108.0,4174.0,104.0,84.0,1.0,Urban,Graduate,No
+LP002759,Y,Approved,86.3,Low Risk (Prime),5000.0,0.0,5000.0,149.0,360.0,1.0,Rural,Graduate,Yes
+LP002760,Y,Approved,87.1,Low Risk (Prime),3767.0,0.0,3767.0,134.0,300.0,1.0,Urban,Graduate,No
+LP002766,Y,Approved,91.0,Low Risk (Prime),7859.0,879.0,8738.0,165.0,180.0,1.0,Semiurban,Graduate,Yes
+LP002769,Y,Approved,56.3,Moderate Risk,4283.0,0.0,4283.0,120.0,360.0,1.0,Rural,Graduate,Yes
+LP002774,N,Rejected,19.8,High Risk (Subprime),1700.0,2900.0,4600.0,67.0,360.0,0.0,Urban,Not Graduate,Yes
+LP002775,Y,Approved,71.9,Moderate Risk,4768.0,0.0,4768.0,125.0,360.0,1.0,Rural,Not Graduate,No
+LP002781,Y,Approved,78.2,Low Risk (Prime),3083.0,2738.0,5821.0,120.0,360.0,1.0,Urban,Graduate,No
+LP002782,Y,Approved,87.0,Low Risk (Prime),2667.0,1542.0,4209.0,148.0,360.0,1.0,Rural,Graduate,Yes
+LP002786,Y,Approved,61.2,Moderate Risk,1647.0,1762.0,3409.0,181.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002790,Y,Approved,85.0,Low Risk (Prime),3400.0,0.0,3400.0,80.0,120.0,1.0,Urban,Graduate,Yes
+LP002791,Y,Approved,75.0,Moderate Risk,16000.0,5000.0,21000.0,40.0,360.0,1.0,Semiurban,Graduate,No
+LP002793,Y,Approved,79.3,Low Risk (Prime),5333.0,0.0,5333.0,90.0,360.0,1.0,Rural,Graduate,Yes
+LP002802,Y,Approved,62.1,Moderate Risk,2875.0,2416.0,5291.0,95.0,6.0,0.0,Semiurban,Graduate,No
+LP002803,Y,Approved,95.3,Low Risk (Prime),2600.0,618.0,3218.0,122.0,360.0,1.0,Semiurban,Not Graduate,Yes
+LP002805,Y,Approved,76.8,Low Risk (Prime),5041.0,700.0,5741.0,150.0,360.0,1.0,Urban,Graduate,Yes
+LP002806,Y,Approved,82.0,Low Risk (Prime),6958.0,1411.0,8369.0,150.0,360.0,1.0,Rural,Graduate,Yes
+LP002816,Y,Approved,94.5,Low Risk (Prime),3500.0,1658.0,5158.0,104.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002823,Y,Approved,86.3,Low Risk (Prime),5509.0,0.0,5509.0,143.0,360.0,1.0,Rural,Graduate,Yes
+LP002825,Y,Approved,81.5,Low Risk (Prime),9699.0,0.0,9699.0,300.0,360.0,1.0,Urban,Graduate,Yes
+LP002826,Y,Approved,89.4,Low Risk (Prime),3621.0,2717.0,6338.0,171.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002843,Y,Approved,96.8,Low Risk (Prime),4709.0,0.0,4709.0,113.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002849,Y,Approved,100.0,Low Risk (Prime),1516.0,1951.0,3467.0,35.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002850,Y,Approved,69.5,Moderate Risk,2400.0,0.0,2400.0,46.0,360.0,1.0,Urban,Graduate,No
+LP002853,Y,Approved,83.9,Low Risk (Prime),3015.0,2000.0,5015.0,145.0,360.0,1.0,Urban,Not Graduate,No
+LP002856,Y,Approved,93.6,Low Risk (Prime),2292.0,1558.0,3850.0,119.0,360.0,1.0,Urban,Graduate,Yes
+LP002857,Y,Approved,78.8,Low Risk (Prime),2360.0,3355.0,5715.0,87.0,240.0,1.0,Rural,Graduate,Yes
+LP002858,N,Rejected,37.5,High Risk (Subprime),4333.0,2333.0,6666.0,162.0,360.0,0.0,Rural,Graduate,No
+LP002860,Y,Approved,79.4,Low Risk (Prime),2623.0,4831.0,7454.0,122.0,180.0,1.0,Semiurban,Graduate,Yes
+LP002867,Y,Approved,84.3,Low Risk (Prime),3972.0,4275.0,8247.0,187.0,360.0,1.0,Rural,Graduate,No
+LP002869,N,Rejected,0.0,High Risk (Subprime),3522.0,0.0,3522.0,81.0,180.0,1.0,Rural,Not Graduate,Yes
+LP002870,Y,Approved,72.1,Moderate Risk,4700.0,0.0,4700.0,80.0,360.0,1.0,Urban,Graduate,Yes
+LP002876,Y,Approved,84.9,Low Risk (Prime),6858.0,0.0,6858.0,176.0,360.0,1.0,Rural,Graduate,No
+LP002878,Y,Approved,85.2,Low Risk (Prime),8334.0,0.0,8334.0,260.0,360.0,1.0,Urban,Graduate,Yes
+LP002879,N,Rejected,20.2,High Risk (Subprime),3391.0,1966.0,5357.0,133.0,360.0,0.0,Rural,Graduate,Yes
+LP002885,Y,Approved,76.9,Low Risk (Prime),2868.0,0.0,2868.0,70.0,360.0,1.0,Urban,Not Graduate,No
+LP002890,Y,Approved,90.1,Low Risk (Prime),3418.0,1380.0,4798.0,135.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002891,Y,Approved,73.9,Moderate Risk,2500.0,296.0,2796.0,137.0,300.0,1.0,Rural,Graduate,Yes
+LP002899,Y,Approved,82.8,Low Risk (Prime),8667.0,0.0,8667.0,254.0,360.0,1.0,Rural,Graduate,Yes
+LP002901,Y,Approved,78.1,Low Risk (Prime),2283.0,15000.0,17283.0,106.0,360.0,1.0,Rural,Graduate,No
+LP002907,N,Rejected,30.7,High Risk (Subprime),5817.0,910.0,6727.0,109.0,360.0,1.0,Urban,Graduate,Yes
+LP002920,Y,Approved,76.3,Low Risk (Prime),5119.0,3769.0,8888.0,120.0,360.0,1.0,Rural,Graduate,Yes
+LP002921,N,Rejected,31.8,High Risk (Subprime),5316.0,187.0,5503.0,158.0,180.0,0.0,Semiurban,Not Graduate,Yes
+LP002932,Y,Approved,86.4,Low Risk (Prime),7603.0,1213.0,8816.0,197.0,360.0,1.0,Urban,Graduate,Yes
+LP002935,Y,Approved,75.0,Low Risk (Prime),3791.0,1936.0,5727.0,85.0,360.0,1.0,Urban,Graduate,Yes
+LP002952,Y,Approved,88.5,Low Risk (Prime),2500.0,0.0,2500.0,60.0,360.0,1.0,Urban,Graduate,No
+LP002954,Y,Approved,80.1,Low Risk (Prime),3132.0,0.0,3132.0,76.0,360.0,1.0,Rural,Not Graduate,Yes
+LP002962,Y,Approved,76.3,Low Risk (Prime),4000.0,2667.0,6667.0,152.0,360.0,1.0,Semiurban,Graduate,No
+LP002965,Y,Approved,85.2,Low Risk (Prime),8550.0,4255.0,12805.0,96.0,360.0,1.0,Urban,Graduate,Yes
+LP002969,Y,Approved,96.5,Low Risk (Prime),2269.0,2167.0,4436.0,99.0,360.0,1.0,Semiurban,Graduate,Yes
+LP002971,Y,Approved,84.3,Low Risk (Prime),4009.0,1777.0,5786.0,113.0,360.0,1.0,Urban,Not Graduate,Yes
+LP002975,Y,Approved,93.2,Low Risk (Prime),4158.0,709.0,4867.0,115.0,360.0,1.0,Urban,Graduate,Yes
+LP002980,Y,Approved,84.0,Low Risk (Prime),3250.0,1993.0,5243.0,126.0,360.0,1.0,Semiurban,Graduate,No
+LP002986,Y,Approved,72.1,Moderate Risk,5000.0,2393.0,7393.0,158.0,360.0,1.0,Rural,Graduate,Yes
+LP002989,Y,Approved,72.3,Moderate Risk,9200.0,0.0,9200.0,98.0,180.0,1.0,Rural,Graduate,No
